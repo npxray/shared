@@ -1,0 +1,32 @@
+{
+  "name": "@npxray/og",
+  "version": "0.1.0",
+  "description": "Satori + resvg Open Graph image rendering shared by the npxray API and web build.",
+  "license": "Apache-2.0",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./src/index.ts",
+      "bun": "./src/index.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "src",
+    "fonts"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "bun test test"
+  },
+  "dependencies": {
+    "@npxray/contracts": "workspace:*",
+    "@resvg/resvg-wasm": "^2.6.2",
+    "satori": "^0.26.0"
+  }
+}

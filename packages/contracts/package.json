@@ -1,0 +1,41 @@
+{
+  "name": "@npxray/contracts",
+  "version": "0.1.0",
+  "description": "Shared npxray report contracts generated from the Go engine schema.",
+  "license": "Apache-2.0",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./src/index.ts",
+      "bun": "./src/index.ts",
+      "import": "./dist/index.js"
+    },
+    "./signal-catalog": {
+      "types": "./src/signal-catalog.generated.ts",
+      "bun": "./src/signal-catalog.generated.ts",
+      "import": "./dist/signal-catalog.generated.js"
+    },
+    "./schema": {
+      "types": "./src/schema.ts",
+      "bun": "./src/schema.ts",
+      "import": "./dist/schema.js"
+    }
+  },
+  "files": [
+    "dist",
+    "src/index.ts",
+    "src/generated.ts",
+    "src/signal-catalog.generated.ts",
+    "src/signal-catalog.json",
+    "src/schema.ts",
+    "src/report.schema.json"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "bun test --pass-with-no-tests test"
+  }
+}

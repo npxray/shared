@@ -1,0 +1,31 @@
+{
+  "name": "@npxray/sdk",
+  "version": "0.1.0",
+  "description": "Public npxray SDK client and report contract exports.",
+  "license": "Apache-2.0",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./src/index.ts",
+      "bun": "./src/index.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "bun test test"
+  },
+  "dependencies": {
+    "@elysiajs/eden": "^1.4.9",
+    "@npxray/contracts": "workspace:*",
+    "elysia": "^1.4.19"
+  }
+}

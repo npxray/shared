@@ -1,0 +1,26 @@
+# Dependencies
+node_modules/
+
+# Build and test output
+dist/
+coverage/
+test-results/
+.tmp/
+*.tsbuildinfo
+
+# Local environment and OS/editor state
+.DS_Store
+.env
+.env.*
+!.env.example
+
+# Local tool state and deployment metadata
+.agents/
+.claude/
+.opencode/
+.kamal/
+.vercel/
+outputs/
+work/
+plans/
+skills-lock.json

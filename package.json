@@ -1,0 +1,30 @@
+{
+  "name": "npxray-shared-workspace",
+  "version": "0.1.0",
+  "private": true,
+  "license": "Apache-2.0",
+  "type": "module",
+  "packageManager": "bun@1.3.14",
+  "scripts": {
+    "build": "bun run --filter '*' build",
+    "generate:contracts": "bun scripts/generate-contracts.ts",
+    "fmt": "biome format --write .",
+    "fmt:check": "biome format .",
+    "lint": "biome lint .",
+    "pack:dry-run": "npm pack --dry-run --workspace @npxray/contracts && npm pack --dry-run --workspace @npxray/sdk && npm pack --dry-run --workspace @npxray/og",
+    "test": "bun test",
+    "typecheck": "bun run --filter '*' typecheck"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "@biomejs/biome": "^2.3.8",
+    "@types/bun": "^1.3.6",
+    "@types/node": "^24.10.4",
+    "typescript": "^5.9.3"
+  },
+  "overrides": {
+    "esbuild": "0.28.1"
+  }
+}
