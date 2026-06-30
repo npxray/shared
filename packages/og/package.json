@@ -1,6 +1,6 @@
 {
   "name": "@npxray/og",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "description": "Satori + resvg Open Graph image rendering shared by the npxray API and web build.",
   "license": "Apache-2.0",
   "type": "module",
@@ -25,7 +25,7 @@
     "test": "bun test test"
   },
   "dependencies": {
-    "@npxray/contracts": "workspace:*",
+    "@npxray/contracts": "^0.4.1",
     "@resvg/resvg-wasm": "^2.6.2",
     "satori": "^0.26.0"
   }
