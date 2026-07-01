@@ -188,7 +188,7 @@ export const signalCatalog = [
   },
   {
     "id": "entrypoint-sensitive-code",
-    "title": "Entrypoint contains sensitive execution patterns",
+    "title": "Entrypoint uses install/run-sensitive code",
     "severity": "critical",
     "category": "capability",
     "confidence": "high",
@@ -249,7 +249,7 @@ export const signalCatalog = [
   },
   {
     "id": "external-dependency-sensitive-code",
-    "title": "External dependency contains sensitive code",
+    "title": "Dependency install target uses sensitive code",
     "severity": "critical",
     "category": "capability",
     "confidence": "high",
