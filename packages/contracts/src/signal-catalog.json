@@ -106,7 +106,7 @@
     "category": "capability",
     "confidence": "medium",
     "weight": 16,
-    "trigger": "Scanned file preview references curl, wget, Invoke-WebRequest, fetch, axios, http.get, or https.get.",
+    "trigger": "A bin or lifecycle target preview references curl, wget, Invoke-WebRequest, fetch, axios, http.get, or https.get.",
     "source": "tarball"
   },
   {
@@ -116,7 +116,7 @@
     "category": "capability",
     "confidence": "medium",
     "weight": 16,
-    "trigger": "Scanned file preview references child_process, exec, execSync, execFileSync, spawn, or spawnSync.",
+    "trigger": "A bin or lifecycle target preview references child_process, exec, execSync, execFileSync, spawn, or spawnSync.",
     "source": "tarball"
   },
   {
@@ -126,7 +126,7 @@
     "category": "capability",
     "confidence": "medium",
     "weight": 10,
-    "trigger": "Scanned file preview references eval, new Function, vm.runIn, or WebAssembly.compile.",
+    "trigger": "A bin or lifecycle target preview references eval, new Function, vm.runIn, or WebAssembly.compile.",
     "source": "tarball"
   },
   {
@@ -136,7 +136,7 @@
     "category": "capability",
     "confidence": "medium",
     "weight": 10,
-    "trigger": "Scanned file preview references .npmrc, .ssh, common token names, or process.env.",
+    "trigger": "A bin or lifecycle target preview references .npmrc, .ssh, common token names, or process.env.",
     "source": "tarball"
   },
   {
@@ -146,7 +146,7 @@
     "category": "capability",
     "confidence": "medium",
     "weight": 8,
-    "trigger": "Scanned file preview references homedir(), /etc/, ~/, APPDATA, or LOCALAPPDATA.",
+    "trigger": "A bin or lifecycle target preview references homedir(), /etc/, ~/, APPDATA, or LOCALAPPDATA.",
     "source": "tarball"
   },
   {
@@ -156,7 +156,7 @@
     "category": "capability",
     "confidence": "low",
     "weight": 9,
-    "trigger": "Scanned file preview contains base64 decode markers, fromCharCode, or long base64-like runs.",
+    "trigger": "A bin or lifecycle target preview contains base64 decode markers, fromCharCode, or long base64-like runs.",
     "source": "tarball"
   },
   {
