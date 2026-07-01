@@ -1,6 +1,6 @@
 {
   "name": "@npxray/contracts",
-  "version": "0.4.3",
+  "version": "0.4.4",
   "description": "Shared npxray report contracts generated from the Go engine schema.",
   "license": "Apache-2.0",
   "repository": {
@@ -36,7 +36,8 @@
     "src/report.schema.json"
   ],
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "provenance": true
   },
   "scripts": {
     "build": "tsc -p tsconfig.json",
