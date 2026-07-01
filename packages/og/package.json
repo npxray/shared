@@ -3,6 +3,11 @@
   "version": "0.4.2",
   "description": "Satori + resvg Open Graph image rendering shared by the npxray API and web build.",
   "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/npxray/shared.git",
+    "directory": "packages/og"
+  },
   "type": "module",
   "exports": {
     ".": {

@@ -3,6 +3,11 @@
   "version": "0.4.2",
   "description": "Shared npxray report contracts generated from the Go engine schema.",
   "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/npxray/shared.git",
+    "directory": "packages/contracts"
+  },
   "type": "module",
   "exports": {
     ".": {

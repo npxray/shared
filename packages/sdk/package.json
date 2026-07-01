@@ -3,6 +3,11 @@
   "version": "0.4.2",
   "description": "Public npxray SDK client and report contract exports.",
   "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/npxray/shared.git",
+    "directory": "packages/sdk"
+  },
   "type": "module",
   "exports": {
     ".": {
